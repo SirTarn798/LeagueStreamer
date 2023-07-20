@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.LeagueStreamerController">
+   <children>
+      <Label layoutX="28.0" layoutY="32.0" text="League of Legends Streamer">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="89.0" text="Name:" />
+      <Label layoutX="28.0" layoutY="128.0" text="Lane:" />
+      <Label layoutX="28.0" layoutY="164.0" text="Kills:" />
+      <Label layoutX="28.0" layoutY="206.0" text="Deaths:" />
+      <Label layoutX="28.0" layoutY="250.0" text="Assists:" />
+      <Label layoutX="28.0" layoutY="288.0" text="KDA:" />
+      <Label fx:id="nameLabel" layoutX="198.0" layoutY="89.0" text="Label" />
+      <Label fx:id="laneLabel" layoutX="198.0" layoutY="128.0" text="Label" />
+      <Label fx:id="killsLabel" layoutX="198.0" layoutY="164.0" text="Label" />
+      <Label fx:id="deathsLabel" layoutX="198.0" layoutY="206.0" text="Label" />
+      <Label fx:id="assistsLabel" layoutX="198.0" layoutY="250.0" text="Label" />
+      <Label fx:id="kdaLabel" layoutX="198.0" layoutY="288.0" text="Label" />
+      <Button layoutX="20.0" layoutY="361.0" mnemonicParsing="false" onAction="#onLeagueStreamerButtonClick" text="Back" />
+   </children>
+</AnchorPane>

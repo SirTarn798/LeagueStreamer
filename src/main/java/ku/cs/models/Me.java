@@ -3,13 +3,14 @@ package ku.cs.models;
 public class Me {
     private String id;
     private String name;
-
+    private String nickName;
     private int yearBorn;
 
-    public Me(String id, String name, int yearBorn) {
+    public Me(String id, String name, String nickName, int yearBorn) {
         this.id = id;
         this.name = name;
         this.yearBorn = yearBorn;
+        this.nickName = nickName;
     }
 
     public String getName() {
@@ -26,5 +27,9 @@ public class Me {
 
     public int getAge() {
         return 2023-this.yearBorn;
+    }
+
+    public String getNickName() {
+        return nickName;
     }
 }
