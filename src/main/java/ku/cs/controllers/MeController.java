@@ -14,15 +14,13 @@ public class MeController {
     @FXML
     Label idLabel;
 
-    @FXML
-    Label ageLabel;
 
     @FXML
     Label nickNameLabel;
 
     @FXML
     public void initialize() {
-        Me me = new Me("6510405407", "Jirayu Oaurai", "Tarn", 2004);
+        Me me = new Me("6510405407", "Jirayu Oaurai", "Tarn");
         showMe(me);
     }
 
@@ -40,7 +38,6 @@ public class MeController {
 
         nameLabel.setText(me.getName());
         idLabel.setText(me.getId());
-        ageLabel.setText(""+me.getAge());
         nickNameLabel.setText(me.getNickName());
     }
 

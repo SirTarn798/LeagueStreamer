@@ -15,17 +15,24 @@ public class LeagueStreamer {
         this.deaths = deaths;
         this.assists = assists;
     }
-
-    public void setKills(int kills) {
-        this.kills = kills;
+    public LeagueStreamer(String name, String lane) {
+        this.name = name;
+        this.lane = lane;
+        this.kills = 0;
+        this.deaths = 0;
+        this.assists = 0;
     }
 
-    public void setDeaths(int deaths) {
-        this.deaths = deaths;
+    public void addKills(int kills) {
+        this.kills += kills;
     }
 
-    public void setAssists(int assists) {
-        this.assists = assists;
+    public void addDeaths(int deaths) {
+        this.deaths += deaths;
+    }
+
+    public void addAssists(int assists) {
+        this.assists += assists;
     }
 
     public String getName() {
@@ -54,4 +61,6 @@ public class LeagueStreamer {
         }
         return (double)(this.kills+this.assists) / (double)this.deaths;
     }
+
+
 }
