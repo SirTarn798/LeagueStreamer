@@ -19,6 +19,7 @@ public class MeApplication extends Application {
         String viewPath = "ku/cs/views/";
         FXRouter.when("me-profile", viewPath + "me.fxml");
         FXRouter.when("league-streamer-profile", viewPath+"league-streamer-profile.fxml");
+        FXRouter.when("league-streamer-list", viewPath + "league-streamer-list.fxml");
     }
 
     public static void main(String[] args) {

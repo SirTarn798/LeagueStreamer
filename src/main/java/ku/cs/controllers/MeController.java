@@ -25,9 +25,19 @@ public class MeController {
     }
 
     @FXML
-    protected void onMeButtonClick() {
+    protected void onMeButtonClickToStreamerProfile() {
         try {
             FXRouter.goTo("league-streamer-profile");
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    protected void onMeButtonClickToStreamerList() {
+        try {
+            FXRouter.goTo("league-streamer-list");
         }
         catch (IOException e) {
             throw new RuntimeException(e);

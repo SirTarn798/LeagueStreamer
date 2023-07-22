@@ -30,14 +30,14 @@ public class LeagueStreamerList {
     public void addDeaths(String name, int deaths) {
         LeagueStreamer exist = findStreamerByName(name);
         if(exist != null) {
-            exist.addKills(deaths);
+            exist.addDeaths(deaths);
         }
     }
 
     public void addAssists(String name, int assists) {
         LeagueStreamer exist = findStreamerByName(name);
         if(exist != null) {
-            exist.addKills(assists);
+            exist.addAssists(assists);
         }
     }
 
@@ -48,5 +48,9 @@ public class LeagueStreamerList {
             }
         }
         return null;
+    }
+
+    public ArrayList<LeagueStreamer> getStreamers() {
+        return streamers;
     }
 }

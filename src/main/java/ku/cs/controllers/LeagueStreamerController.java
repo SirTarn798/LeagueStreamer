@@ -1,6 +1,7 @@
 package ku.cs.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import ku.cs.models.LeagueStreamer;
 import ku.cs.services.FXRouter;
 
@@ -21,6 +22,8 @@ public class LeagueStreamerController {
     Label assistsLabel;
     @FXML
     Label kdaLabel;
+
+
 
 
     @FXML
