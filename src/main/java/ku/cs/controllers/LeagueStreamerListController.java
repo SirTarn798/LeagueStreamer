@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import ku.cs.models.LeagueStreamer;
 import ku.cs.models.LeagueStreamerList;
 import ku.cs.services.FXRouter;
@@ -36,6 +37,8 @@ public class LeagueStreamerListController {
     TextField addDeathsTextField;
     @FXML
     TextField addAssistsTextField;
+    @FXML
+    AnchorPane infoPanel;
 
     private LeagueStreamerList leagueStreamerList;
     private LeagueStreamer selectedStreamer;
@@ -52,6 +55,7 @@ public class LeagueStreamerListController {
 
     @FXML
     public void initialize() {
+        infoPanel.setVisible(false);
         errorLabel.setText("");
         clearStreamerInfo();
         LeagueStreamerHardCodeDatasource datasource = new LeagueStreamerHardCodeDatasource();
@@ -63,9 +67,11 @@ public class LeagueStreamerListController {
                 if (newValue == null) {
                     clearStreamerInfo();
                     selectedStreamer = null;
+                    infoPanel.setVisible(false);
                 } else {
                     showStreamerInfo(newValue);
                     selectedStreamer = newValue;
+                    infoPanel.setVisible(true);
                 }
             }
         });
