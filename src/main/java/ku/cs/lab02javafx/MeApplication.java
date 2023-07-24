@@ -20,6 +20,7 @@ public class MeApplication extends Application {
         FXRouter.when("me-profile", viewPath + "me.fxml");
         FXRouter.when("league-streamer-profile", viewPath+"league-streamer-profile.fxml");
         FXRouter.when("league-streamer-list", viewPath + "league-streamer-list.fxml");
+        FXRouter.when("add-streamer", viewPath + "add-streamer.fxml");
     }
 
     public static void main(String[] args) {

@@ -54,6 +54,17 @@ public class LeagueStreamerListController {
     }
 
     @FXML
+    protected void onStreamerListToAddStreamer() {
+        try {
+            FXRouter.goTo("add-streamer");
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @FXML
     public void initialize() {
         infoPanel.setVisible(false);
         errorLabel.setText("");
