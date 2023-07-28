@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class AddStreamerController {
-    private String filePath = "src/main/java/ku/cs/services/LeagueStreamers.csv";git 
+    private String filePath = "src/main/java/ku/cs/services/LeagueStreamers.csv";
 
     @FXML
     Label errorLabel;
