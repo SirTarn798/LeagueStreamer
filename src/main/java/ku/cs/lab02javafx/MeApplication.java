@@ -23,6 +23,7 @@ public class MeApplication extends Application {
         FXRouter.when("add-streamer", viewPath + "add-streamer.fxml");
         FXRouter.when("register", viewPath + "register.fxml");
         FXRouter.when("login", viewPath + "login.fxml");
+        FXRouter.when("navigate", viewPath + "navigation-bar.fxml");
 
     }
 
